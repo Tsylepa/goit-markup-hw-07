@@ -1,0 +1,30 @@
+.clients__list {
+  @extend %flexBetween;
+  flex-wrap: wrap;
+  color: $icon-color;
+}
+
+.clients__item {
+  width: 170px;
+  height: 92px;
+}
+
+.clients__link {
+  @extend %flexCenter;
+  width: 100%;
+  height: 100%;
+  color: currentColor;
+  border: 1px solid $icon-color;
+  border-radius: 4px;
+  transition: color $transition-function, border-color $transition-function;
+
+  &:hover,
+  &:focus {
+    color: $accent;
+    border-color: $accent;
+  }
+}
+
+.clients__logo {
+  fill: currentColor;
+}

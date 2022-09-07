@@ -1,0 +1,41 @@
+.features {
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}
+
+.features__list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.features__item {
+  width: calc((100% - 90px) / 4);
+  
+}
+
+.features__thumb {
+  @extend %flexCenter;
+  height: 120px;
+  margin-bottom: 30px;
+  border-radius: 4px;
+  background-color: $additional-color;
+}
+
+.features__icon {
+  margin: 0 auto;
+}
+
+.features__heading,
+.projects__heading {
+  display: none;
+}
+
+.features__title {
+  margin-bottom: 10px;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: $secondary-color;
+}

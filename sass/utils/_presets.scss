@@ -1,0 +1,72 @@
+body {
+  min-width: 1200px;
+  font-family: Roboto, sans-serif;
+  color: $primary-color;
+}
+
+ul,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  margin-bottom: 0;
+  padding: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+.list {
+  list-style: none;
+}
+
+.link {
+  text-decoration: none;
+}
+
+.accent {
+  color: $accent;
+}
+
+.is-hidden {
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+  scale: 1.2;
+}
+
+.button {
+  font: inherit;
+  border: none;
+  color: $contrast-color;
+  cursor: pointer;
+}
+
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.section__heading {
+  margin-bottom: 50px;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: $secondary-color;
+}
+
+.container {
+  display: inherit;
+  width: 1200px;
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  align-items: inherit;
+}

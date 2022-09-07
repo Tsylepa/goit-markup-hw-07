@@ -1,0 +1,93 @@
+.page-footer {
+  @extend %flexBetween;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-color: $contrast-base-color;
+}
+
+.aboutus {
+  min-width: 231px;
+}
+
+.aboutus__logo {
+  color: $contrast-color;
+}
+
+.aboutus__address {
+  margin-top: 20px;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  color: $contrast-color;
+}
+
+.aboutus__item:not(:first-child) {
+  margin-top: 9px;
+}
+
+.aboutus__link {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.joinus {
+  min-width: 206px;
+  margin-left: 70px;
+  padding-top: 12px;
+}
+
+.joinus__title,
+.subscribe__title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: $contrast-color;
+}
+
+.joinus .socials {
+  @include socials(
+    $contrast-color,
+    rgba(255, 255, 255, 0.1),
+    $contrast-color,
+    $accent
+  );
+  margin-top: 20px;
+}
+
+.subscribe {
+  margin-left: 93px;
+  padding-top: 12px;
+}
+
+.subscribe__field {
+  @extend %flexCenter;
+  margin-top: 20px;
+}
+
+.subscribe__input {
+  width: 358px;
+  padding: 15px 16px;
+  color: $contrast-color;
+  background-color: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+}
+
+.subscribe__button {
+  @extend %flexCenter;
+  min-width: 200px;
+  height: 50px;
+  margin-left: 12px;
+  border-radius: 4px;
+  background-color: $accent;
+}
+
+.subscribe__icon {
+  width: 24px;
+  height: 24px;
+  margin-left: 10px;
+  fill: $additional-color;
+}

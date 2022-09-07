@@ -1,0 +1,81 @@
+.page-header {
+  @extend %flexBetween;
+  border-bottom: 1px solid #ececec;
+}
+
+.page-header__logo {
+  padding-top: 24px;
+  padding-bottom: 25px;
+}
+
+.pages {
+  margin-left: 93px;
+}
+
+.contacts {
+  margin-left: auto;
+}
+
+.pages,
+.contacts {
+  display: flex;
+}
+
+.pages__item:not(:first-child),
+.contacts__item:not(:first-child) {
+  margin-left: 50px;
+}
+
+.pages__link,
+.contacts__link {
+  display: block;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
+.pages__link {
+  position: relative;
+  color: $secondary-color;
+}
+
+.pages__link--current {
+  color: $accent;
+
+  &::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+    width: 100%;
+    height: 100%;
+    background-color: $accent;
+    border-radius: 2px;
+    height: 4px;
+  }
+}
+
+.contacts__link {
+  @extend %flexCenter;
+  color: $primary-color;
+}
+
+.contacts__link,
+.pages__link,
+.address__link {
+  transition: color $transition-function;
+
+  &:hover,
+  &:focus {
+    color: $accent;
+  }
+}
+
+.contacts__icon {
+  margin-right: 10px;
+  vertical-align: middle;
+  fill: currentColor;
+}

@@ -1,0 +1,27 @@
+@mixin socials($color, $bgColor, $alterColor, $alterBgColor) {
+  @extend %flexBetween;
+
+  &__link {
+    @extend %flexCenter;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    color: $color;
+    background-color: $bgColor;
+    transition: color $transition-function,
+      background-color $transition-function;
+
+    &:hover,
+    &:focus {
+      color: $alterColor;
+      background-color: $alterBgColor;
+    }
+  }
+
+  &__icon {
+    width: 20px;
+    height: 20px;
+    fill: currentColor;
+  }
+}
+
