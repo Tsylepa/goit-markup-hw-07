@@ -25,3 +25,18 @@
   }
 }
 
+.socials {
+  @include socials($icon-color, transparent, $contrast-color, $accent);
+  margin-top: 16px;
+}
+
+
+.joinus .socials {
+  @include socials(
+    $contrast-color,
+    rgba(255, 255, 255, 0.1),
+    $contrast-color,
+    $accent
+  );
+  margin-top: 20px;
+}

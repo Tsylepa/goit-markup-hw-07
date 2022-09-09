@@ -1,0 +1,24 @@
+.aboutus {
+  min-width: 231px;
+}
+
+.aboutus__logo {
+  color: $contrast-color;
+}
+
+.aboutus__address {
+  margin-top: 20px;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: $contrast-color;
+}
+
+.aboutus__item:not(:first-child) {
+  margin-top: 9px;
+}
+
+.aboutus__link {
+  color: rgba(255, 255, 255, 0.6);
+}

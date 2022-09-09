@@ -1,0 +1,8 @@
+.joinus {
+  min-width: 206px;
+  margin-left: 70px;
+}
+
+.joinus__title {
+  @include title($contrast-color);
+}

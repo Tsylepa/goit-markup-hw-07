@@ -34,8 +34,3 @@
 .team__content {
   padding: 30px;
 }
-
-.socials {
-  @include socials($icon-color, transparent, $contrast-color, $accent);
-  margin-top: 16px;
-}
